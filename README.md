@@ -20,35 +20,6 @@
 
 ---
 
-## 🏗 Структура репозиторію
-
-#
-
-Project/
-├── main.tf
-├── backend.tf
-├── outputs.tf
-│
-├── modules/
-│ ├── s3-backend/ # S3 + DynamoDB для state
-│ ├── vpc/ # VPC + сабнети + маршрути
-│ ├── ecr/ # AWS ECR репозиторій
-│ ├── eks/ # EKS кластер + node group + CSI драйвер
-│ ├── rds/ # RDS / Aurora з умовною логікою
-│ ├── jenkins/ # Jenkins Helm release
-│ └── argo_cd/ # ArgoCD Helm release + app-of-apps chart
-│
-├── charts/
-│ └── django-app/ # Helm chart додатку (Deployment, Service, HPA)
-│
-└── Django/ # Сам додаток
-├── app/
-├── Dockerfile
-├── Jenkinsfile
-└── docker-compose.yaml
-
----
-
 ## 🚀 Розгортання
 
 ### 1. Підготовка середовища
